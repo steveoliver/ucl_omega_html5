@@ -1,0 +1,5 @@
+/* This file will hold the main styles for your website. */
+.zone-wrapper {margin-top: .5em;}
+
+#zone-menu { background-color: #666; padding: .5em; }
+#zone-menu a { color: #FFF; }
