@@ -1,0 +1,14 @@
+/* Minimal padding */
+/*.min-padding .region-inner,*/
+.min-padding .pane-content,
+.min-padding.views-row,
+.min-padding .block-inner {padding:15px;}
+.min-padding h2.pane-title {padding:10px 15px 0; margin-bottom:-5px;}
+
+/* Alignment */
+.align-right,
+.align-right ul {text-align:right;}
+
+/* Lists */
+.list-style-type-none ul li, .list-style-type-none ul li.leaf {list-style-type: none;list-style-image: none;}
+.list-display-inline li {display:inline;}

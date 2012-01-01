@@ -1,6 +1,9 @@
-.red { color: red; }
-.orange { color: orange; }
-.yellow { color: yellow; }
-.green { color: green; }
-.blue { color: blue; }
-.violet { color: violet; }
+.fg-black { color: #000; }
+.fg-dark  { color: #444; }
+.fg-light { color: #999; }
+.fg-white { color: #FFF; }
+
+.bg-black { background-color: #000; }
+.bg-dark  { background-color: #444; }
+.bg-light { background-color: #999; }
+.bg-white { background-color: #FFF; }

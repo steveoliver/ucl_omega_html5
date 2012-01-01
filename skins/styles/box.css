@@ -1,0 +1,7 @@
+/* Borders */
+.border-light {border:1px solid #EEE;}
+
+/* Shadows */
+.shadow-light  {box-shadow: 0 2px 2px #AAA;}
+.shadow-medium {box-shadow: 0 2px 2px #AAA;}
+.shadow-dark   {box-shadow: 0 2px 2px #444;}

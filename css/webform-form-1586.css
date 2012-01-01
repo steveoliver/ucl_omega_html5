@@ -1,0 +1,7 @@
+/* Fixed width */
+#webform-client-form-1586 {width:480px;}
+/* Mad-libs style (inline fields) */
+/*form#webform-client-form-1586 #webform-component-first-name,
+form#webform-client-form-1586 #webform-component-last-name {display:inline;}*/
+
+.webform-container-inline label {display:block !important; float:left; min-width: 180px;}

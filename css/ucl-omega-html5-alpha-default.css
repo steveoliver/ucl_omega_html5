@@ -1,1 +1,14 @@
 /* This file will hold styles that are loaded using the same media query as the narrow grid. */
+
+/* Reduce the main slide on narrow layouts */
+body.responsive-layout-normal .view-home-page-features {}
+body.responsive-layout-narrow .view-home-page-features .views-slideshow-cycle-main-frame {width:664px;}
+body.responsive-layout-normal .view-home-page-features .views-slideshow-cycle-main-frame {width:682px;}
+
+/* Set size of pagers based on layout */
+body.responsive-layout-normal .view-home-page-features .views-slideshow-controls-bottom .views-slideshow-pager-field-item {width:218px;}
+body.responsive-layout-wide .view-home-page-features .views-slideshow-controls-bottom .views-slideshow-pager-field-item {width:388px;}
+
+/* Hide the pager on narrow layouts */
+body.responsive-layout-narrow .view-home-page-features .views-slideshow-controls-bottom,
+body.responsive-layout-mobile .view-home-page-features .views-slideshow-controls-bottom {display:none; visibility:hidden;}

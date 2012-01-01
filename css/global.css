@@ -1,5 +1,205 @@
 /* This file will hold the main styles for your website. */
-.zone-wrapper {margin-top: .5em;}
+@import url("../skins/styles/box.css");
+@import url("../skins/styles/colors.css");
+@import url("../skins/styles/general.css");
 
-#zone-menu { background-color: #666; padding: .5em; }
-#zone-menu a { color: #FFF; }
+@font-face {font-family:"Vonnes Condensed"; src:url('/sites/all/fonts/Vonnes-MediumCondensed.otf');}
+@font-face {font-family:"Vonnes Light Condensed"; src:url('/sites/all/fonts/Vonnes-LightCondensed.otf');}
+@font-face {font-family:"Vonnes Black Condensed"; src:url('/sites/all/fonts/VonnesTTBlackCond.otf');}
+@font-face {font-family:"Vonnes Bold"; src:url('/sites/all/fonts/VonnesTTBold.otf');}
+@font-face {font-family:"Vonnes Light"; src:url('/sites/all/fonts/Vonnes-Light.otf');}
+@font-face {font-family:"Vonnes Book"; src:url('/sites/all/fonts/Vonnes-Book.otf');}
+@font-face {font-family:"Vonnes Thin Extended"; src:url('/sites/all/fonts/Vonnes-ThinExtended.otf');}
+
+/* Omega override: omega-text.css (~line 97): */
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol,
+ul, pre, table, address, fieldset {
+  margin-bottom: .25em;
+}
+
+body {color:#444; background-color: #EFEFEF;}
+h1, h2, h3, h4, h5, h6 {font-family:"Vonnes Light";}
+h1#page-title {margin:0 0 0 15px;}
+body.page-home h1#page-title {margin:10px 0 10px 15px;}
+h2.pane-title {font-size:1.6em;}
+/*h5, h6 {font-family:"Vonnes Condensed";}*/
+p {margin-bottom:1em;}
+a:link,
+a:visited {color: #3156AD; /* 258 */ text-decoration:none;}
+a:hover {color: #7AA2FF; /* 036 */}
+
+/* Little hack -- shouldn't be necessary: */
+/*.pane-edge-treatment-options-pane-all-styles h2.pane-title {margin-top:1em;}*/
+/* ------------------------------------------------------------------------ */
+
+header,
+footer {box-shadow:-1px 3px 4px -3px #0B121E; color: #FFF;}
+header {background-color:#1E2531; padding:1em 0;}
+footer {background-color:#666;}
+header a,
+footer a {color: #CCDFEC !important;}
+header a.active-trail.active,
+footer a.active-trail.active {color:#FFF;}
+
+/*.zone-wrapper {margin-top: .5em;}*/
+#zone-postscript-wrapper {background-color: #FEFEFE; box-shadow:0px -1px 6px #CCC;}
+
+/* Branding zone */
+h1.site-name,
+h2.site-name {/*font-family: "Vonnes Bold";*/ font-size: 2em; margin-top:.5em;}
+.site-name a,
+.site-name a:link,
+.site-name a:visited {color:#FFF;}
+.site-slogan {color: #999; margin-top:.4em;}
+
+nav.navigation {margin-top:1.2em; text-align:right;}
+nav.navigation li {/*border-right:1px solid #E4E4E4;*/ font-size:1.25em; /*margin-right:0px;*/}
+/*nav.navigation li.active-trail {padding:15px; background-color:#4E4832;}*/
+nav.navigation li a {font-family:"Vonnes Book"; text-decoration:none;}
+nav.navigation li a.active {color:#FFF !important;}
+
+/* Menu zone */
+#zone-menu {}
+#zone-menu a {}
+
+/* Breadcrumb */
+/*#breadcrumb h2.element-invisible {position:relative !important; font-family: Verdana, arial, sans-serif; font-size:1em; display:block; float:left; margin-right: .5em; font-weight:normal; padding-left:.25em;}
+#breadcrumb h2.element-invisible:after {content: ":";}*/
+#breadcrumb .breadcrumb {margin-top:1em; margin-bottom: 0px; float:right; font-family:"Vonnes Light";}
+#breadcrumb .breadcrumb a {text-decoration:none;}
+
+/* Pages */
+/*#collection-page.omega-12-threecol-4-4-4 .grid-12 {background:#F7F7F7;}
+#collection-page.omega-12-threecol-4-4-4 .grid-12 .inside {width:720px; margin:0 auto;}*/
+
+/*section#section-content div#region-content {margin-top:1em;}*/
+
+/* Views */
+
+/* Home page slideshow
+/---------------------------------------------------------------------------- */
+.pane-home-page-features-panel-pane-1 {margin-bottom:6px;} /* The panel pane */
+.view-home-page-features {display:block; clear:both; background-color:#F7F7F7; height:450px;}
+.view-home-page-features .view-content {margin:0 auto;}
+.view-home-page-features .views-slideshow-cycle-main-frame {width:750px; height:450px; overflow:hidden; float:left;}
+
+.view-home-page-features .views-slideshow-slide-text-container {position:relative; top:-115px; height: 95px; width:750px; background-image:url('../images/black-bg-50-opacity.png');}
+.view-home-page-features .views-slideshow-slide-text-container .inner {color:#FFF; padding:1em;}
+.view-home-page-features .views-slideshow-slide-text-container .inner a {color:#FFF; text-decoration: none;}
+
+.view-home-page-features .views-slideshow-controls-bottom {position:relative; float:left;}
+.view-home-page-features .views-slideshow-controls-bottom .views-slideshow-pager-field-item {display:block;}
+.view-home-page-features .views-slideshow-controls-bottom .views-slideshow-pager-field-item .inner {padding:0px 10px; font-weight:bold; font-family:"Vonnes Condensed"; font-size:1.2em;}
+.view-home-page-features .views-slideshow-controls-bottom .views-slideshow-pager-field-item.active .inner,
+.view-home-page-features .views-slideshow-controls-bottom .views-slideshow-pager-field-item:hover .inner {background-color:#EEE;}
+
+/* Pager */
+.view-home-page-features .views-slideshow-pager-field-item .image {display:none;}
+.view-home-page-features .views-slideshow-pager-field-item .text {clear:left; display:block; padding:1.5em 1em;}
+
+
+/* -------------------------------------------------------------------------- */
+
+/*.view-edge-treatment-examples .views-row,
+.view-edge-treatment-options .views-row,
+.view-styles.view-display-id-collection_grid_pane .views-row {border:1px solid #EEE; padding: 1em;}*/
+
+/* Style node featured image field */
+.field-name-field-img-featured img {width:100%; height:auto;}
+
+/* Style node fields in Panel pane display */
+/*body.node-type-style .pane-entity-field .field {margin-bottom: 1em;}*/
+
+/* Style node Country of Origin field */
+.addressfield-container-inline.locality-block {display:none;}
+
+/* Dealer Support / Images */
+.view-dealer-support-images table.views-view-grid td {text-align:center; border:1px #666 ridge; padding: 1em;}
+
+/* Generic classes */
+.float-left {float:left; margin-top:0; margin-right:15px; margin-bottom:15px;}
+.float-left.views-row-last {margin-right:0px;}
+.view-collections .views-row.float-left {width:240px;}
+.view-collections .views-field-field-img-preview {margin-bottom: 15px;}
+
+/* Tweaky tweaks */
+.view-edge-treatment-options .view-content {clear:both;}
+
+/*.panel-pane {border:1px solid #eee; padding:1em;}*/
+body.page-home .panel-pane p {margin-bottom: 0;}
+
+/*body.page-home .panel-pane h2.pane-title {padding:.5em; background-color:#F7F7F7;}*/
+a.button {display:block; line-height:3em; padding:0 1em; background-color:#F7F7F7;}
+p a.button {margin:1em -1em -2em;}
+body.page-dealer-support .pane-views-panes .more-link a {display:block; padding:1em; background-color:#F7F7F7; margin: 1em 0 0;}
+
+
+/* Table styles (overrides Omega tables css) */
+table                  {  border: 1px solid #EEE;  width: 100%;}
+thead th, th           {  background: #f7f7f7;  border-bottom: 1px solid #DDD;  color: #333; text-transform:uppercase; font-size: .9em; font-family:"Vonnes Light";}
+td, th                 {  padding: 4px 8px;  vertical-align: middle;}
+th a,
+th a:link,
+th a:visited           {  text-decoration: none;}
+th a                   {  display: block;}
+th a img               {  margin: 0 0 0 5px;}
+th.active              {  background: #FFF; /* #DDD; */ border-left: none; /* 1px solid #EEE; */ border-right: none /* 1px solid #EEE; */}
+/* Odd & Even Styles */
+tr.even, tr.odd        {  border-bottom: 1px solid #F7F7F7;}
+tr.even td             {  background: #FFF; /* #FCFCFC; */}
+tr.odd td              {  background: #FFF; /* #FFFFFF; */}
+td.active              {  border-left: 1px solid #CCC;  border-right: 1px solid #CCC;}
+tr.even td.active      {  background: #FFF; /* #FAFAFA; */}
+tr.odd td.active       {  background: #FFF; /* #FAFAFA; */}
+tr:hover td,
+tr.even:hover td.active,
+tr.odd:hover td.active {  background: #FFF; /* #F6F6F6; */}
+td ul.links            {  margin-bottom: 0;}
+
+/* Flags */
+.flag-sample-request.flag-wrapper .flag-throbber {display:none;}
+.flag-sample-request.flag-wrapper a.flag-action,
+.flag-sample-request.flag-wrapper a.unflag-action {display:block; padding-left: 22px; background-color:transparent; background-repeat: no-repeat; background-position:0px 4px;}
+.flag-sample-request.flag-wrapper a.flag-action {background-image: url('/sites/all/libraries/icons/silk/add.png');}
+.flag-sample-request.flag-wrapper a.unflag-action {background-image: url('/sites/all/libraries/icons/silk/delete.png');}
+
+.flag-label-new {position:relative; top:-176px; left:190px; margin-bottom:-45px; display:block; height:45px; width:45px; text-indent:-9999px; background:transparent url('../images/flag-label-new_topright.png') no-repeat top left;}
+.flag-label-new span {display:none;}
+
+.flag-status-float-right {float:right; margin:-86px -6px 0 0; z-index:5;}
+
+.flag-status-pure-wool {display:block; height:85px; width:85px; overflow:hidden; text-indent:-9999px; background: transparent url('../images/flag-status-pure-wool.gif') no-repeat top left;}
+.flag-status-pure-wool span {}
+
+.flag-status-pure-sisal {display:block; height:85px; width:85px; overflow:hidden; text-indent:-9999px; background: transparent url('../images/flag-status-pure-sisal.gif') no-repeat top left;}
+.flag-status-pure-sisal span {}
+
+/*fieldset {border:1px solid #CCC; padding:0 1em;}*/
+
+
+/* Tabs
+/ ----------------------------------------------------- */
+.ui-tabs.ui-widget-content {border-color: #EEE; margin: 1em 1.4em 1.4em 0; box-shadow:0px 2px 6px #CCC;}
+.ui-tabs.ui-widget-content .ui-widget-header {border-color:#CCC;}
+.ui-tabs.ui-widget-content .ui-state-active,
+.ui-tabs.ui-widget-content .ui-widget-content .ui-state-active,
+.ui-tabs.ui-widget-content .ui-widget-header .ui-state-active {border-color: #CCC;}
+
+/* Adjustments
+ ---------------------------------------------------------------------------- */
+/* Elements */
+.min-padding.align-right.block-forward-form .block-inner {margin-right:-20px;}
+body.node-type-style h1#page-title {margin-left:22px;}
+.asid-industry-partner {display:block; width:100px; height:130px; overflow:hidden; text-indent:-9999px; background: transparent url('../images/asid-logo-medium.png') no-repeat top left;}
+.asid-industry-partner span {display:none;}
+.block.block-without-title .content {margin-top:1.5em;}
+.small-caps {font-family: "Vonnes Light"; text-transform: uppercase; font-size: 0.9em;}
+
+/* Zones */
+#zone-postscript-wrapper {margin-top: 15px;}
+
+/* Panel panes */
+.pane-node-field-img-featured {margin-bottom:15px;}
+
+.pane-edge-treatment-options-pane-per-style,
+.pane-colorways-panel-pane-4 {padding-bottom: 7px;}

@@ -1,1 +1,3 @@
 /* This file will hold styles that are loaded using the same media query as the normal grid. */
+body.responsive-layout-normal .container-16 .grid-8 {width:450px !important;}
+/* Add style for min-padding classed ...panes? */
