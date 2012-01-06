@@ -18,11 +18,16 @@ ul, pre, table, address, fieldset {
 }
 
 body {color:#444; background-color: #EFEFEF;}
+
 h1, h2, h3, h4, h5, h6 {font-family:"Vonnes Light";}
-h1#page-title {margin:0 0 0 15px;}
-body.page-home h1#page-title {margin:10px 0 10px 15px;}
+h1#page-title {padding-left: 10px;}
+body.page-home h1#page-title {padding-left: 10px;}
+
+.logo-img {box-shadow:0px 0px 38px #666; -webkit-box-shadow:0px 0px 38px #666; -moz-box-shadow:0px 0px 38px #666; margin: 7px 20px 0px 17px;}
+
 h2.pane-title {font-size:1.6em;}
 /*h5, h6 {font-family:"Vonnes Condensed";}*/
+
 p {margin-bottom:1em;}
 a:link,
 a:visited {color: #3156AD; /* 258 */ text-decoration:none;}
@@ -34,19 +39,29 @@ a:hover {color: #7AA2FF; /* 036 */}
 
 #section-header,
 #section-header {box-shadow:-1px 3px 4px -3px #0B121E; color: #FFF;}
-#section-header {background-color:#1E2531;}
-#section-header {background-color:#666;}
+#section-header,
+#zone-footer-wrapper {
+  background-color:#333;
+  background: -moz-linear-gradient(top, #444 0%, #333);
+  background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#333));
+  color: #EEE;}
+/*#section-header {background-color:#1E2531;}*/
 #section-header a,
 #section-footer a {color: #CCDFEC !important;}
+#section-header .site-name a span {color: #FFF;}
 #section-header a.active-trail.active,
-#section-footer a.active-trail.active {color:#FFF;}
+#section-footer a.active-trail.active {color:#FFF !important;}
 
-/*.zone-wrapper {margin-top: .5em;}*/
-#zone-postscript-wrapper {background-color: #FEFEFE; box-shadow:0px -1px 6px #CCC;}
+#region-header-first .region-inner {padding: 15px 15px 0 0;}
+
+#section-header .block-delta-blocks-logo,
+#section-header .block-delta-blocks-site-name {display:inline; float:left;}
+#section-header .block-delta-blocks-site-slogan {display:block; clear:both; padding:10px 10px 10px 15px;}
+#section-header .block-delta-blocks-site-slogan .site-slogan {font-size: 1.6em; font-weight:normal; font-weight:normal; color: #EEE;}
 
 /* Branding zone */
 h1.site-name,
-h2.site-name {/*font-family: "Vonnes Bold";*/ font-size: 2em; margin-top:.5em;}
+h2.site-name {/*font-family: "Vonnes Bold";*/ font-size: 2em; margin-top:.75em;}
 .site-name a,
 .site-name a:link,
 .site-name a:visited {color:#FFF;}
@@ -65,7 +80,7 @@ nav.navigation li a.active {color:#FFF !important;}
 /* Breadcrumb */
 /*#breadcrumb h2.element-invisible {position:relative !important; font-family: Verdana, arial, sans-serif; font-size:1em; display:block; float:left; margin-right: .5em; font-weight:normal; padding-left:.25em;}
 #breadcrumb h2.element-invisible:after {content: ":";}*/
-#breadcrumb .breadcrumb {margin-top:1em; margin-bottom: 0px; float:right; font-family:"Vonnes Light";}
+#breadcrumb .breadcrumb {margin-top:1em; margin-left:1em; font-family:"Vonnes Light";}
 #breadcrumb .breadcrumb a {text-decoration:none;}
 
 /* Pages */
@@ -163,7 +178,7 @@ td ul.links            {  margin-bottom: 0;}
 .flag-sample-request.flag-wrapper a.flag-action {background-image: url('/sites/all/libraries/icons/silk/add.png');}
 .flag-sample-request.flag-wrapper a.unflag-action {background-image: url('/sites/all/libraries/icons/silk/delete.png');}
 
-.flag-label-new {position:relative; top:-176px; left:190px; margin-bottom:-45px; display:block; height:45px; width:45px; text-indent:-9999px; background:transparent url('../images/flag-label-new_topright.png') no-repeat top left;}
+.flag-label-new {position:relative; top:-188px; left:205px; margin-bottom:-45px; display:block; height:45px; width:45px; text-indent:-9999px; background:transparent url('../images/flag-label-new_topright.png') no-repeat top left;}
 .flag-label-new span {display:none;}
 
 .flag-status-float-right {float:right; margin:-86px -6px 0 0; z-index:5;}
@@ -186,21 +201,50 @@ td ul.links            {  margin-bottom: 0;}
 .ui-tabs.ui-widget-content .ui-widget-header .ui-state-active {border-color: #CCC;}
 
 /* Adjustments
- ---------------------------------------------------------------------------- */
+ -----------title----------------------------------------------------------------- */
 /* Elements */
-.min-padding.align-right.block-forward-form .block-inner {margin-right:-20px;}
-body.node-type-style h1#page-title {margin-left:22px;}
-.asid-industry-partner {display:block; width:100px; height:130px; overflow:hidden; text-indent:-9999px; background: transparent url('../images/asid-logo-medium.png') no-repeat top left;}
+/*.min-padding.align-right.block-forward-form .block-inner {margin-right:-20px;}*/
+/*body.node-type-style h1#page-title {margin-left:22px;}*/
+.asid-industry-partner {display:block; float:left; width:64px; height:83px; margin-top: 5px; margin-right: 10px; overflow:hidden; text-indent:-9999px; background: transparent url('../images/asid-logo-small.png') no-repeat top left;}
 .asid-industry-partner span {display:none;}
 /*.block.block-without-title .content {margin-top:1.5em;}*/  /* This needs to apply to only certain blocks without titles, like the Forward form, etc. */
 .small-caps {font-family: "Vonnes Light"; text-transform: uppercase; font-size: 0.9em;}
 
 /* Zones */
 #zone-branding {margin-top: 1em; margin-bottom:1em;}
-#zone-postscript-wrapper {margin-top: 15px;}
+/*#zone-postscript-wrapper {margin-top: 15px;}*/
 
 /* Panel panes */
 .pane-node-field-img-featured {margin-bottom:15px;}
 
 .pane-edge-treatment-options-pane-per-style,
 .pane-colorways-panel-pane-4 {padding-bottom: 7px;}
+
+
+/* Context admin page */
+#context-blockform .context-blockform-selector {height:38em;}
+
+body.page-home #page-title {display:none;}
+body.page-home #section-content {padding-top:15px;}
+
+
+
+
+
+
+/* Reduce the main slide on narrow layouts */
+body.responsive-layout-normal .view-home-page-features {}
+body.responsive-layout-narrow .view-home-page-features .views-slideshow-cycle-main-frame {width:664px;}
+body.responsive-layout-normal .view-home-page-features .views-slideshow-cycle-main-frame {width:682px;}
+
+/* Set size of pagers based on layout */
+body.responsive-layout-normal .view-home-page-features .views-slideshow-controls-bottom .views-slideshow-pager-field-item {width:218px;}
+body.responsive-layout-wide .view-home-page-features .views-slideshow-controls-bottom .views-slideshow-pager-field-item {width:408px;}
+
+/* Hide the pager on narrow layouts */
+body.responsive-layout-narrow .view-home-page-features .views-slideshow-controls-bottom,
+body.responsive-layout-mobile .view-home-page-features .views-slideshow-controls-bottom {display:none; visibility:hidden;}
+
+
+
+.compact-text {letter-spacing:-0.02em;}
