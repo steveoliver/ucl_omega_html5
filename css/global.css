@@ -46,9 +46,9 @@ a:hover {color: #7AA2FF; /* 036 */}
   background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#333));
   color: #EEE;}
 /*#section-header {background-color:#1E2531;}*/
-#section-header a,
-#section-footer a {color: #CCDFEC !important;}
-#section-header .site-name a span {color: #FFF;}
+#section-header .content a,
+#section-footer .content a {color: #CCDFEC !important;}
+#section-header .site-name a span {color: #FFF; text-shadow:2px 1px 2px #333;}
 #section-header a.active-trail.active,
 #section-footer a.active-trail.active {color:#FFF !important;}
 
@@ -80,8 +80,8 @@ nav.navigation li a.active {color:#FFF !important;}
 /* Breadcrumb */
 /*#breadcrumb h2.element-invisible {position:relative !important; font-family: Verdana, arial, sans-serif; font-size:1em; display:block; float:left; margin-right: .5em; font-weight:normal; padding-left:.25em;}
 #breadcrumb h2.element-invisible:after {content: ":";}*/
-#breadcrumb .breadcrumb {margin-top:1em; margin-left:1em; font-family:"Vonnes Light";}
-#breadcrumb .breadcrumb a {text-decoration:none;}
+#breadcrumb .breadcrumb {text-shadow: 0px 1px 0px #FFF; color: #777; margin-top:1em; margin-left:1em; font-family:"Vonnes Light";}
+#breadcrumb .breadcrumb a {color: #777 !important; text-decoration:none;}
 
 /* Pages */
 /*#collection-page.omega-12-threecol-4-4-4 .grid-12 {background:#F7F7F7;}
@@ -133,6 +133,7 @@ nav.navigation li a.active {color:#FFF !important;}
 
 /* Generic classes */
 .float-left {float:left; margin-top:0; margin-right:15px; margin-bottom:15px;}
+.float-right {float:right; margin-top:0; margin-left:15px; margin-bottom:15px;}
 .float-left.views-row-last {margin-right:0px;}
 .view-collections .views-row.float-left {width:240px;}
 .view-collections .views-field-field-img-preview {margin-bottom: 15px;}
@@ -178,7 +179,7 @@ td ul.links            {  margin-bottom: 0;}
 .flag-sample-request.flag-wrapper a.flag-action {background-image: url('/sites/all/libraries/icons/silk/add.png');}
 .flag-sample-request.flag-wrapper a.unflag-action {background-image: url('/sites/all/libraries/icons/silk/delete.png');}
 
-.flag-label-new {position:relative; top:-188px; left:205px; margin-bottom:-45px; display:block; height:45px; width:45px; text-indent:-9999px; background:transparent url('../images/flag-label-new_topright.png') no-repeat top left;}
+.flag-label-new {position:relative; top:-188px; left:0px /* 205 */; margin-bottom:-45px; display:block; height:45px; width:45px; text-indent:-9999px; background:transparent url('../images/flag-label-new_topleft_white.png') no-repeat top left;}
 .flag-label-new span {display:none;}
 
 .flag-status-float-right {float:right; margin:-86px -6px 0 0; z-index:5;}
@@ -227,7 +228,8 @@ td ul.links            {  margin-bottom: 0;}
 body.page-home #page-title {display:none;}
 body.page-home #section-content {padding-top:15px;}
 
-
+/* Book pages need a little padding */
+body.page-node.node-type-book #block-system-main .block-inner {padding:15px;}
 
 
 
